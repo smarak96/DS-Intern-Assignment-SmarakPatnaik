@@ -2,12 +2,12 @@
 
 ## Approach to the Problem
 
-The goal of this project was to predict the equipment energy consumption in a manufacturing facility. The target variable, `equipment_energy_consumption`, is influenced by various environmental factors such as temperature, humidity, lighting, and other operational conditions, which serve as predictor variables.
+The goal of this project was to predict the equipment energy consumption in a manufacturing facility. The target variable, `equipment_energy_consumption`, is influenced by various environmental factors such as temperature, humidity, lighting, and other operational conditions.
 
 Given my past experience in data preprocessing and feature engineering, I applied several key steps to ensure the dataset was clean and suitable for modeling:
 
 1. **Handling Humidity Values**:
-   - Humidity is a crucial feature in energy consumption predictions. Since negative humidity values are physically impossible, I removed any such values from the dataset to ensure that all humidity readings were valid and meaningful. T
+   - Humidity is a crucial feature in energy consumption predictions. Since negative humidity values are physically impossible, I removed any such values from the dataset to ensure that all humidity readings were valid and meaningful.
 
 2. **Removing Extreme Outliers**:
    - Extreme outliers in the data can distort model performance. I used statistical methods such as IQR to identify and remove extreme outliers in features like temperature, humidity, and energy consumption. By doing so, I ensured that the model wasn’t overly influenced by rare data points that could lead to overfitting.
@@ -60,7 +60,7 @@ Based on the insights from the data and the model's performance, the following r
 
 
 2. **Lighting Optimization**:
-   - Although lighting energy is not highly significant in the model, improving lighting management (e.g., using energy-efficient lighting and automation) could still offer potential savings, especially during non-peak hours.
+   - Although lighting energy is not highly significant in the model, improving lighting management (e.g using energy-efficient lighting and automation) could still offer potential savings, especially during non-peak hours.
 
 ## Conclusion
 The model's results provide useful insights into which features contribute the most to equipment energy consumption. By focusing on optimizing temperature and humidity control, and exploring energy-saving strategies for lighting and operational hours, energy consumption can be effectively reduced, leading to cost savings and improved energy efficiency.
